@@ -21,7 +21,7 @@ else
 	PS1='\[\e[1;35;1m\]\u uses \h: \W > \[\e[0m\]'
 fi
 
-PROMPT_COMMAND='if is_git_repo; then PS1="\[\e[0;32;1m\]\u uses \h: \W > \[\e[0m\]"; else PS1="\[\e[1;35;1m\]\u uses \h: \W > \[\e[0m\]"; fi'
+PROMPT_COMMAND='if is_git_repo; then PS1="\[\e[0;32;1m\]\u uses \h: \W \n> \[\e[0m\]"; else PS1="\[\e[1;35;1m\]\u uses \h: \W \n> \[\e[0m\]"; fi'
 
 
 export EDITOR=vim
