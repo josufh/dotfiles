@@ -11,7 +11,18 @@ alias ls='ls -a --color=auto'
 alias grep='grep --color=auto'
 alias ..='cd ..'
 
-PS1='\[\e[1;35;1m\]\u uses \h: \W > \[\e[0m\]'
+is_git_repo() {
+	git rev-parse --ise-inside-work-tree &>/dev/null
+}
+
+if is_git_repo; then
+	PS1='\[\e[0;32;1m\]\u uses \h: \W > \[\e[0m\]'
+else
+	PS1='\[\e[1;35;1m\]\u uses \h: \W > \[\e[0m\]'
+fi
+
+PROMPT_COMMAND='if is_git_repo; then PS1="\[\e[0;32;1m\]\u uses \h: \W > \[\e[0m\]"; else PS1="\[\e[1;35;1m\]\u uses \h: \W > \[\e[0m\]"; fi'
+
 
 export EDITOR=vim
 
