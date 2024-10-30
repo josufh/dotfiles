@@ -1,0 +1,9 @@
+#opacity-rule = [
+#	"90:class_g = 'Alacritty'"
+#]
+
+#inactive-opacity = 0.6;
+
+#active-opacity = 1.0;
+
+backend = "xrender";

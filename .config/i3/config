@@ -191,6 +191,7 @@ bar {
 
 exec --no-startup-id setxkbmap -layout jp
 exec --no-startup-id feh --bg-scale ~/Downloads/wallpaper.jpg
+# exec --no-startup-id picom --config ~/.config/picom/config
 
 gaps inner 15px
 smart_gaps off
