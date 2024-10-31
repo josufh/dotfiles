@@ -7,8 +7,8 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
-        colors = true
-        interval = 5
+ colors = true
+ interval = 5
 }
 
 order += "wireless _first_"
@@ -17,18 +17,18 @@ order += "disk /"
 order += "time"
 
 wireless _first_ {
-        format_up = "Dox %ip"
-        format_down = "No wifi?"
+ format_up = "IP DOX %ip"
+ format_down = "No wifi?"
 }
 
 battery all {
-        format = "%percentage"
+ format = "The juice is %percentage full"
 }
 
 disk "/" {
-        format = "Porn folder: %avail"
+ format = "Porn folder %avail"
 }
 
 time {
-        format = "%Y-%m-%d %H:%M:%S"
+  format="%Y年%m月%d日 %H時%M分"
 }
