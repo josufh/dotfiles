@@ -25,6 +25,9 @@ PROMPT_COMMAND='if is_git_repo; then PS1="\[\e[0;32;1m\]\u uses \h: \W \n> \[\e[
 
 
 export EDITOR=vim
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
 
 setfont ter-132n
 

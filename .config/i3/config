@@ -192,7 +192,7 @@ bar {
 exec --no-startup-id xrandr --output Virtual-1 --mode 1920x1080
 exec --no-startup-id setxkbmap -layout jp
 exec --no-startup-id feh --bg-scale ~/Downloads/wallpaper.jpg
-# exec --no-startup-id picom --config ~/.config/picom/config
+exec --no-startup-id fcitx
 
 gaps inner 15px
 smart_gaps off
